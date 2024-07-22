@@ -21,7 +21,7 @@ This work addresses a critical problem in seismic hazard assessment and infrastr
 
 
 <figure style="text-align: center;">
-  <img src="assert/fas_maps.png" alt="Description of the image" width="700" height=auto>
+  <img src="asset/fas_maps.png" alt="Description of the image" width="700" height=auto>
   <figcaption>An example of generated FAS maps in the San Francisco Bay Area</figcaption>
 </figure>
 
