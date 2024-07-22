@@ -19,11 +19,11 @@ This work addresses a critical problem in seismic hazard assessment and infrastr
 
 - **Great potential**: CGM-GM demonstrates a strong potential for outperforming a state-of-the-art non-ergodic empirical ground motion model and shows great promise in seismology and beyond.
 
+Below is an example of generated FAS maps in the San Francisco Bay Area.
 
-<figure style="text-align: center;">
-  <img src="asset/fas_maps.png" alt="Description of the image" width="700" height=auto>
-  <figcaption>An example of generated FAS maps in the San Francisco Bay Area</figcaption>
-</figure>
+<p align="center">
+    <img width=85%" src="asset/fas_maps.png">
+</p>
 
 ---
 
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 ### Dataset
 
-The earthquake dataset in the SFBA was originally downloaded from [NCEDC](https://ncedc.org/). The training and testing dataset in this study is preprocessed and can be found in a data report, which will be made publish soon.
+The earthquake dataset in the SFBA was originally downloaded from [NCEDC](https://ncedc.org/). The training and testing dataset in this study is preprocessed and can be found in a data report, which will be made public soon.
 
 ### Implementations
 
