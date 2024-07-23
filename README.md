@@ -1,7 +1,7 @@
 # CGM-GM
 Learning Physics for Unveiling Hidden Earthquake Ground Motions via Conditional Generative Modeling
 
-Paper link: [TBD]
+Paper link: [arXiv](https://arxiv.org/abs/2407.15089)
 
 ---
 
