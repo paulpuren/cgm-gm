@@ -31,7 +31,11 @@ Below is an example of generated FAS maps in the San Francisco Bay Area.
 
 ### Hardware requirements
  
-All the experiments are performed on an NVIDIA Titan RTX Graphics Card.
+All the experiments are performed on an NVIDIA A100 Tensor Core GPU of 40GB memory.
+
+### OS requirements
+
+All the experiments are performed on SUSE Linux Enterprise Server 15 SP5.
 
 ### Python requirements
 
