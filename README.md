@@ -52,36 +52,43 @@ pip install -r requirements.txt
 
 ### Dataset
 
-The earthquake dataset in the SFBA was originally downloaded from [NCEDC](https://ncedc.org/). The training and testing dataset in this study is preprocessed and can be found in a data report, which will be made public soon.
+The earthquake dataset in the SFBA was originally downloaded from [NCEDC](https://ncedc.org/). The training and testing dataset in this study is preprocessed and can be found in a [data report](https://www.designsafe-ci.org/data/browser/public/designsafe.storage.published/PRJ-4573).
 
 ### Implementations
 
 1. Train the CGM-GM with Hyperopt for hyper-parameters optimization:
 
-    ```python
+   ```python
+    # if training CGM-GM (with geospatial coordinates)
     python train_hyperopt.py
 
-    # if training CGM-baseline (with rupture distances)
+    # if training CGM-baseline (with epicentral distances)
     python train_hyperopt.py --tcondvar 4
     ```
 
-2. Evaluate the best model:
+3. Evaluate the best model on all waveforms:
 
     ```python
     python test_best_model.py
     ```
 
-3. Generate waveforms from a 100x100 grid:
+4. Generate waveforms from a 100x100 grid:
 
     ```python
     python generate_points.py
     ```
 
-The implementations of ergodic and non-ergodic GMM for the SFBA can be found in [this paper](https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/113/5/2144/623913/Methodology-for-Including-Path-Effects-Due-to-3D?redirectedFrom=fulltext). 
+### Demonstrative examples
 
-The evaluations include the comparisons of waveform shapes, P and S arrival time, amplitude spectra, and Fourier amplitude spectra maps. We use the [PhaseNet](https://github.com/AI4EPS/PhaseNet) to pick the arrival time of P and S waves. 
+- Please refer to `generate_wfs.ipynb` to generate single or multiple waveforms with specific conditional variables.
+- Please refer to `generate_fasmap.ipynb` to produce the FAS maps of CGM-GM, CGM-baselin, and non-ergodic GMM for comparison. The related dataset in the paper for FAS maps is provided via a [Google Drive Link](https://drive.google.com/drive/folders/1FBldbGO7lk-BwmLNbW1ODUDL4M97ZdQO?usp=sharing). 
 
 
+### Other notes
+
+- The implementations of ergodic and non-ergodic GMM for the SFBA can be found in [this paper](https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/113/5/2144/623913/Methodology-for-Including-Path-Effects-Due-to-3D?redirectedFrom=fulltext). 
+
+- The evaluations include the comparisons of waveform shapes, P and S arrival time, amplitude spectra, and Fourier amplitude spectra maps. We use the [PhaseNet](https://github.com/AI4EPS/PhaseNet) to pick the arrival time of P and S waves. 
 
 
 ## License
