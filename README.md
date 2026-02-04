@@ -1,4 +1,5 @@
-# CGM-GM
+# CGM-GM  [![DOI](https://zenodo.org/badge/831899317.svg)](https://doi.org/10.5281/zenodo.18480270)
+
 Learning Physics for Unveiling Hidden Earthquake Ground Motions via Conditional Generative Modeling
 
 Paper link: [arXiv](https://arxiv.org/abs/2407.15089)
