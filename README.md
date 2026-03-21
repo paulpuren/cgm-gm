@@ -1,10 +1,10 @@
 # :earth_americas: CGM-GM: Conditional Generative Models for Earthquake Ground Motions 
 
----
 
 [![Nature Communications](https://img.shields.io/badge/Nature%20Communications-paper-blue.svg)](https://doi.org/10.1038/s41467-026-70719-2) [![arXiv](https://img.shields.io/badge/arXiv-2407.15089-b31b1b.svg)](https://arxiv.org/abs/2407.15089) [![DOI](https://zenodo.org/badge/831899317.svg)](https://doi.org/10.5281/zenodo.18480270)
 
 > **[Nature Communications] Learning earthquake ground motions via conditional generative modeling**
+> 
 > Pu Ren, Rie Nakata, Maxime Lacour, Ilan Naiman, Nori Nakata, Jialin Song, Zhengfa Bi, Osman Asif Malik, Dmitriy Morozov, Omri Azencot, N. Benjamin Erichson, and Michael W. Mahoney 
 
 This repository provides the official implementation of **[CGM-GM](https://www.nature.com/articles/s41467-026-70719-2)**. We are also building a broader CGM family for geophysical applications: 
@@ -13,7 +13,6 @@ This repository provides the official implementation of **[CGM-GM](https://www.n
 - **[CGM-Wave](https://www.stat.berkeley.edu/~mmahoney/pubs/Advancing_Broadband_Seismic_Wavefield_1.pdf)**: conditional diffusion models for high-fideliy broadband geothermal wavefields 
 - **[CGM Overview](https://www.stat.berkeley.edu/~mmahoney/pubs/nakata-et-al-2025-feb-tle.pdf)**: a summary of our work on simulating seismic wavefields using generative AI 
 
----
 
 ## :fire: Updates 
 
@@ -23,7 +22,6 @@ This repository provides the official implementation of **[CGM-GM](https://www.n
 - [07/2025] Our CGM-Wave is accepted by *IEEE Transactions on Geoscience and Remote Sensing*.
 - [02/2025] Our position paper (CGM Overview) is accepted by *The Leading Edge*.
 
----
 
 ## Overview
 
@@ -31,7 +29,6 @@ CGM-GM is a conditional generative modeling framework for synthesizing high-freq
 
 In this repository, CGM-GM uses earthquake magnitude together with source and station information as conditional inputs to generate waveform representations in the time-frequency domain and reconstruct them back to time-domain motion.
 
----
 
 ## Key features
 
@@ -46,7 +43,6 @@ Below is an example of generated FAS maps in the San Francisco Bay Area.
   <img width="85%" src="asset/fas_maps.png" alt="Generated FAS maps in the San Francisco Bay Area">
 </p>
 
----
 
 ## Code structure
 
@@ -84,7 +80,6 @@ Below is an example of generated FAS maps in the San Francisco Bay Area.
 - `metrics/`: discriminative and visualization-oriented evaluation utilities.
 - `utils/`: helper functions for plotting and general utilities.
 
----
 
 ## System requirements
 
@@ -108,7 +103,6 @@ conda activate cgm_gm
 pip install -r requirements.txt
 ```
 
----
 
 ## Data
 
@@ -124,7 +118,6 @@ The preprocessing pipeline in this repository expects waveform tables such as `T
 - converts waveforms to time-frequency representations with STFT,
 - normalizes both waveform features and conditional variables to support model training.
 
----
 
 ## Usage
 
@@ -158,7 +151,6 @@ Generate waveforms on a 100x100 grid for FAS-map analysis:
 python generate_points.py
 ```
 
----
 
 ## Notebooks and examples
 
@@ -166,7 +158,6 @@ python generate_points.py
 - Use `generate_fasmap.ipynb` to produce and compare FAS maps for CGM-GM, the baseline model, and the non-ergodic GMM.
 - The dataset used in the paper for FAS-map examples is also provided via [Google Drive](https://drive.google.com/drive/folders/1FBldbGO7lk-BwmLNbW1ODUDL4M97ZdQO?usp=sharing).
 
----
 
 ## Evaluation notes
 
@@ -181,7 +172,6 @@ This project uses [PhaseNet](https://github.com/AI4EPS/PhaseNet) for picking P-w
 
 For reference, the implementations of the ergodic and non-ergodic GMMs for the SFBA are related to the methodology described in [this paper](https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/113/5/2144/623913/Methodology-for-Including-Path-Effects-Due-to-3D?redirectedFrom=fulltext).
 
----
 
 ## Citation
 
@@ -198,13 +188,11 @@ If you find our research helpful, please consider citing our paper:
 }
 ```
 
----
 
 ## License
 
 This project is released under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
 
----
 
 ## Contact
 
