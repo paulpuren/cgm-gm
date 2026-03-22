@@ -9,9 +9,9 @@
 
 This repository provides the official implementation of **[CGM-GM](https://www.nature.com/articles/s41467-026-70719-2)**. We are also building a broader CGM family for geophysical applications: 
 
-- **[CGM-FAS](https://arxiv.org/abs/2512.19909)**: conditional variational autoencoder models for Fourier amplitude spectra for modeling non-ergodic path effects
-- **[CGM-Wave](https://www.stat.berkeley.edu/~mmahoney/pubs/Advancing_Broadband_Seismic_Wavefield_1.pdf)**: conditional diffusion models for high-fideliy broadband geothermal wavefields 
-- **[CGM Overview](https://www.stat.berkeley.edu/~mmahoney/pubs/nakata-et-al-2025-feb-tle.pdf)**: a summary of our work on simulating seismic wavefields using generative AI 
+- **[CGM-FAS](https://arxiv.org/abs/2512.19909)**: conditional variational autoencoder models for Fourier amplitude spectra for modeling non-ergodic path effects.
+- **[CGM-Wave](https://www.stat.berkeley.edu/~mmahoney/pubs/Advancing_Broadband_Seismic_Wavefield_1.pdf)**: conditional diffusion models for high-fideliy broadband geothermal wavefields.
+- **[CGM Overview](https://www.stat.berkeley.edu/~mmahoney/pubs/nakata-et-al-2025-feb-tle.pdf)**: a summary of our work on simulating seismic wavefields using generative AI. 
 
 
 ## :fire: Updates 
